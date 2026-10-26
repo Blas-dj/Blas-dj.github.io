@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Computer Science Teacher | Programming, Python & Robotics, Networking </title>
+
+  <meta name="description"
+        content="Computer Science teacher profile covering programming, Python, Java, ICT, digital literacy, robotics and mathematics. Explore educational resources and projects.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#101827">
+
+  <link rel="canonical" href="https://blas-dj.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="Computer Science Teacher | Programming & Robotics">
+  <meta property="og:description"
+        content="Explore computer science teaching areas, programming projects and educational resources.">
+  <meta property="og:url" content="https://blas-dj.github.io/">
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101827;
+      --surface: #182438;
+      --surface-light: #202f46;
+      --text: #edf3ff;
+      --muted: #b6c3d9;
+      --accent: #83e1c0;
+      --border: #34445b;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--max-width), 90%);
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      padding: 12px;
+      background: var(--accent);
+      color: var(--bg);
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(16, 24, 39, 0.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding-block: 100px 80px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      margin: 18px 0;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      max-width: 700px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      color: var(--bg);
+      background: var(--accent);
+    }
+
+    .button.secondary {
+      color: var(--accent);
+    }
+
+    section {
+      padding-block: 65px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      padding: 7px 12px;
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.92rem;
+    }
+
+    .contact-panel {
+      padding: clamp(24px, 5vw, 45px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    footer {
+      padding-block: 30px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 16px;
+      }
+
+      .nav-links {
+        gap: 12px 18px;
+      }
+
+      .hero {
+        padding-block: 70px 55px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#home">Computer Science Education</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section id="home" class="hero" style="border-top: 0;">
+      <p class="eyebrow">Teaching · Technology · Problem-solving</p>
+
+      <h1>Computer Science Teacher</h1>
+
+      <p>
+        Programming, Python, ICT, Digital Literacy, Robotics
+        and Mathematics.
+      </p>
+
+      <p>
+        Welcome to my professional website. Here you can explore
+        my teaching interests, educational resources and programming
+        projects, as well as find information relevant to schools
+        and educational communities.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#subjects">
+          Explore teaching areas
+        </a>
+
+        <a class="button secondary" href="#contact">
+          Get in touch
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="eyebrow">About</p>
+      <h2>About my teaching interests</h2>
+
+      <p class="section-intro">
+        I am interested in computer science education and in helping
+        students develop computational thinking, logical reasoning,
+        creativity and practical problem-solving skills.
+      </p>
+
+      <p>
+        My professional interests include programming, networking, digital
+        technologies, robotics and mathematics. I believe that
+        practical activities and meaningful projects can help
+        learners connect theoretical concepts with real-world
+        applications.
+      </p>
+
+      <p>
+        This website presents my subject areas, educational work
+        and projects. Further information about my qualifications,
+        teaching experience, languages and professional background
+        can be added here.
+      </p>
+    </section>
+
+    <section id="subjects">
+      <p class="eyebrow">Teaching areas</p>
+      <h2>Subjects and areas of interest</h2>
+
+      <p class="section-intro">
+        Explore the subjects I focus on and the skills students
+        can develop through computing and technology education.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Computer Science</h3>
+          <p>
+            Computational thinking, algorithms, logical reasoning,
+            data representation and an understanding of how
+            computer systems work.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Programming</h3>
+          <p>
+            Programming fundamentals, structured problem-solving,
+            debugging and the design of practical software projects.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Python</h3>
+          <p>
+            Python fundamentals, variables, conditions, loops,
+            functions and project-based programming exercises
+            appropriate to learners' levels.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>ICT and Digital Literacy</h3>
+          <p>
+            Digital tools, information literacy, responsible
+            technology use, online safety and practical digital skills.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Robotics</h3>
+          <p>
+            Robotics concepts, programming, automation, logical
+            reasoning and hands-on technology activities.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Mathematics</h3>
+          <p>
+            Mathematical reasoning, patterns, structured thinking
+            and problem-solving connected to computing where relevant.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">Practical learning</p>
+      <h2>Educational resources and projects</h2>
+
+      <p class="section-intro">
+        Practical examples can help schools and learners understand
+        how computing concepts can be explored through activities,
+        programming exercises and project work.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Python Programming</h3>
+          <p>
+            Add examples of Python programs, coding exercises,
+            algorithms or small applications you have created.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Computer Science Resources</h3>
+          <p>
+            Add original worksheets, lesson materials, explanations,
+            quizzes or other educational resources you are able
+            to share publicly.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Robotics and Technology</h3>
+          <p>
+            Showcase real robotics projects, simulations, experiments
+            or technology activities, including your role and
+            the tools used.
+          </p>
+        </article>
+      </div>
+
+      <p style="margin-top: 28px;">
+        More code and educational materials may be available in
+        my <a href="https://github.com/Blas-dj"
+              target="_blank" rel="noopener noreferrer">GitHub profile</a>.
+      </p>
+    </section>
+
+    <section id="approach">
+      <p class="eyebrow">Learning approach</p>
+      <h2>Learning through exploration</h2>
+
+      <p class="section-intro">
+        Computing education can combine conceptual understanding
+        with practical experimentation.
+      </p>
+
+      <ul>
+        <li>Breaking complex problems into manageable steps.</li>
+        <li>Learning through programming exercises and projects.</li>
+        <li>Developing logical reasoning and independent thinking.</li>
+        <li>Using digital technologies thoughtfully and responsibly.</li>
+        <li>Connecting computing concepts with real-world challenges.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div class="contact-panel">
+        <p class="eyebrow">Professional contact</p>
+        <h2>Teaching opportunities and collaboration</h2>
+
+        <p>
+          Schools, educators and educational organisations are
+          welcome to get in touch regarding Computer Science,
+          programming, ICT, robotics and mathematics education.
+        </p>
+
+        <p>
+          For professional enquiries, please contact me by email
+          or connect with me through my professional profiles.
+        </p>
+
+        <!-- Replace the placeholder below with your real email. -->
+        <p>
+          <strong>Email:</strong>
+          <span>Add your professional email address here.</span>
+        </p>
+
+        <p>
+          <strong>Professional profile:</strong>
+          <a href="https://github.com/Blas-dj"
+             target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="year">2026</span> Computer Science Education.
+        Educational content and professional portfolio.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
